@@ -7,6 +7,11 @@ It is currently set to listen for UDP Packets on IP 192.168.0.177 and port 8888.
 
 The datastructure of each UDP packet is very simple: 32 bytes where each byte defines the intensity of one LCD.
 
+If the board doesn't get any UDP data for more than 5 seconds it will turn to a demo mode.
+The demo mode will be stopped as soon as it retrieves new data packages.
+This can take up to a few seconds depending on the duration of the current demo mode.
+
+
 2015 Vincent Rebers, Jason Bruges Studio
 
 
@@ -32,3 +37,12 @@ Troubleshooting
 
 Notes
 -------
+
+Control Demos can be found here:
+
+Openframeworks:
+https://github.com/JBSCode/VCD_Prototyping_UDPExample
+
+Processing:
+https://github.com/JBSCode/VCD_Prototyping_UDPExample_P5
+
